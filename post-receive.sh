@@ -8,7 +8,7 @@ echo "[post-receive] Acessando Diretório do Repositório"
 cd /root/NodeJS-express-example-deploy
 
 echo "[post-receive] Git Checkout"
-git --git-dir=/root/NodeJS-express-simple-test.git --work-tree=/root/NodeJS-express-example-deploy checkout master -f
+git --git-dir=/root/NodeJS-express-simple-test.git --work-tree=/root/NodeJS-express-example-deploy checkout main -f
 
 echo "[post-receive] Docker-Compose down"
 docker-compose down &&
