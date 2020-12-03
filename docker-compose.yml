@@ -10,4 +10,4 @@ services:
             - '3333:3000'
         environment:
             - PORT=3000
-        command: /bin/bash -c "yarn && yarn pm2 start index.js --name nodejs-express-git-hooks"
+        command: /bin/bash -c "yarn && node index.js"
