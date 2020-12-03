@@ -14,4 +14,4 @@ echo "[post-receive] Docker-Compose down"
 docker-compose down &&
 
 echo "[post-receive] Docker-Compose up"
-docker-compose up
+docker-compose up -d
