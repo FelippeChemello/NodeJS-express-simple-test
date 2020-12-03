@@ -9,7 +9,7 @@ app.use(cors())
 app.use(express.json())
 
 app.get('/', (request, response) => {
-    response.send('GET na raiz do site')
+    response.send("GET recebido em '/'")
 })
 
 app.listen(port, () => {

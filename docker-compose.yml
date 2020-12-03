@@ -10,4 +10,4 @@ services:
             - '3333:3000'
         environment:
             - PORT=3000
-        command: /bin/bash -c "yarn && node index.js"
+        command: /bin/bash -c "yarn && yarn build && yarn typeorm migration:run && NODE_ENV=production node dist/server.js"
