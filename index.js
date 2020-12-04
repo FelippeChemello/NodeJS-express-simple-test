@@ -9,7 +9,7 @@ app.use(cors())
 app.use(express.json())
 
 app.get('/', (request, response) => {
-    response.send("GET recebido em '/'")
+    response.send('Olá TDC')
 })
 
 app.listen(port, () => {
